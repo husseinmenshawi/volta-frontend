@@ -187,7 +187,7 @@ const Header = (props) => {
             {/* <DropdownItem>Inbox</DropdownItem> */}
             <DropdownItem>
               <Link
-                to="/login"
+                to="/home"
                 style={{
                   textDecoration: "none",
                   color: "inherit",

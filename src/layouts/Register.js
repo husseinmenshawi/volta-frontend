@@ -14,9 +14,12 @@ import {
   FormText,
 } from "reactstrap";
 
+import HeaderHome from "./HeaderHome";
+
 const Register = () => {
   return (
     <main>
+      <HeaderHome />
       <div className="pageWrapper d-lg-flex">
         <div className="contentAreaLogin">
           <Container className="p-5" fluid>
@@ -64,15 +67,15 @@ const Register = () => {
                           placeholder="Surman"
                         />
                       </FormGroup>
-                      <div class="">
+                      <div className="">
                         <Link
                           to="/dashboard"
-                          class="btn btn-secondary"
+                          className="btn btn-secondary"
                           style={{ marginRight: "10px" }}
                         >
                           Register
                         </Link>
-                        <Link to="/login" class="btn btn-primary">
+                        <Link to="/login" className="btn btn-primary">
                           I Already have an account
                         </Link>
                       </div>

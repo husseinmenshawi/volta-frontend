@@ -5,6 +5,7 @@ import { Navigate } from "react-router-dom";
 const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
 const Login = lazy(() => import("../layouts/Login.js"));
 const Register = lazy(() => import("../layouts/Register.js"));
+const Home = lazy(() => import("../layouts/Home.js"));
 
 /***** Pages ****/
 
@@ -26,7 +27,7 @@ const ThemeRoutes = [
     path: "/",
     element: <FullLayout />,
     children: [
-      { path: "/", element: <Navigate to="/login" /> },
+      { path: "/", element: <Navigate to="/home" /> },
       { path: "/dashboard", exact: true, element: <Starter /> },
       { path: "/about", exact: true, element: <About /> },
       { path: "/alerts", exact: true, element: <Alerts /> },
@@ -38,6 +39,10 @@ const ThemeRoutes = [
       { path: "/list-project", exact: true, element: <Forms /> },
       { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
     ],
+  },
+  {
+    path: "/home",
+    element: <Home />,
   },
   {
     path: "/login",

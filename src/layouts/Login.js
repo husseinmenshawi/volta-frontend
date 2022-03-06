@@ -14,9 +14,12 @@ import {
   FormText,
 } from "reactstrap";
 
+import HeaderHome from "./HeaderHome";
+
 const Login = () => {
   return (
     <main>
+      <HeaderHome />
       <div className="pageWrapper d-lg-flex">
         <div className="contentAreaLogin">
           <Container className="p-5" fluid>
@@ -46,16 +49,16 @@ const Login = () => {
                           placeholder="Password"
                         />
                       </FormGroup>
-                      <div class="">
+                      <div className="">
                         <Link
                           to="/dashboard"
-                          class="btn btn-secondary"
+                          className="btn btn-secondary"
                           style={{ marginRight: "10px" }}
                           state={{ isSuccessfulLogin: true }}
                         >
                           Login
                         </Link>
-                        <Link to="/register" class="btn btn-primary">
+                        <Link to="/register" className="btn btn-primary">
                           Register
                         </Link>
                       </div>
